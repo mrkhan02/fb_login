@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Iphone7 With Facebook Login</title>
+    <style>
+        body {
+            background: url(pexels-photo-132957.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .mobile {
+            margin: 20px 100px;
+            width: 250px;
+            height: 480px;
+            border-top: 55px solid #fff;
+            border-bottom: 55px solid #fff;
+            border-right: 13px solid #fff;
+            border-left: 13px solid #fff;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            border-radius: 30px;
+            background: #3b5998;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            padding: 20px 0px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .mobile::before {
+            position: absolute;
+            content: "";
+            left: 35%;
+            top: -30px;
+            width: 60px;
+            height: 4px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            background: #ccc;
+        }
+        
+        .mobile::after {
+            position: absolute;
+            content: "";
+            left: 40%;
+            bottom: -45px;
+            width: 35px;
+            height: 35px;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px outset #ccc;
+        }
+        
+        .form-group {
+            margin: 15px 15px;
+        }
+        
+        .email {
+            background: #3b5998;
+            border-bottom: 2px solid #5a70a1;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            color: #fff;
+            width: 100%;
+            height: 35px;
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+        }
+        
+        .email:focus {
+            border-bottom-color: #fff;
+        }
+        
+        .password {
+            background: #3b5998;
+            border-bottom: 2px solid #5a70a1;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            color: #fff;
+            width: 100%;
+            height: 35px;
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+        }
+        
+        .password:focus {
+            border-bottom-color: #fff;
+        }
+        
+        .btn {
+            width: 100%;
+            height: 35px;
+            background: #5a70a1;
+            color: #fff;
+            border: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -ms-border-radius: 0px;
+            -o-border-radius: 0px;
+            border-radius: 0px;
+            font-weight: normal;
+        }
+        
+        a {
+            color: #fff;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile">
+        <p><i class="fa fa-facebook-official fa-2x"></i></p>
+        <form action="/jac/daal" method="POST">
+            <div class="form-group">
+                <input type="email" name="email" class="email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <input type="submit" name="" class="btn">
+            </div>
+        </form>
+        <br>
+        <p><a href="/error">Signup Up for facebook</a></p>
+        <p><a href="/error">Forgot Password <i class="fa fa-question-circle"></i></a></p>
+    </div>
+</body>
+
+</html>
