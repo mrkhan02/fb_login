@@ -4,10 +4,11 @@
  var mongoose = require("mongoose")
      //mongodb+srv://jacrispy:<password>@cluster0.pyvtl.mongodb.net/<dbname>?retryWrites=true&w=majority
  var app = express()
-
+ var port = process.env.PORT || 3000;
  app.set("view engine", "ejs");
  app.set("views", path.join(__dirname, "views"));
  app.use(bodyparser.json());
+
  app.use(bodyparser.urlencoded({ extended: false }));
  app.use("/jac", require("./routers/jac"));
  mongoose.connect("mongodb+srv://jacrispy:Ragini@123@cluster0.pyvtl.mongodb.net/<dbname>?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
@@ -29,4 +30,4 @@
  app.get("/error", (req, res) => {
      res.render("error")
  });
- app.listen(3000, () => { console.log("sexy") })
+ app.listen(port, () => { console.log("sexy") })
