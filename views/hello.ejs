@@ -9,19 +9,40 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    
     <style>
-        .container {
-            background-color: aquamarine;
-            text-decoration: blanchedalmond;
-            background: burlywood;
+        body{
+            
+            font-family: 'Ubuntu', sans-serif;
         }
-        
+        .logo{
+        left: 2px;
+        top: 2px;
+    }
+        .container {
+            /* background-color: aquamarine; */
+            text-decoration: blanchedalmond;
+            /* background: burlywood; */
+        }
+
+        .logo { 
+            background: url(go.png);
+            background-size: cover;
+        }
+ 
+        .jumbotron{
+            background-color: white;
+        }
         .col-sm-4 {
-            background-color: cornflowerblue;
+            /* background-color: cornflowerblue; */
             border: crimson;
             padding: 2cm;
             text-shadow: crimson;
             text-rendering: optimizeLegibility;
+
         }
         
         .sex {
@@ -30,6 +51,20 @@
             text-align: center;
             text-overflow: ellipsis;
         }
+        #h {
+            /* font-family: 'Bubblegum Sans', cursive;   */
+            font-family: 'Acme', sans-serif;
+        }
+        
+        .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(128, 128, 128);
+        }
     </style>
 </head>
 
@@ -37,27 +72,39 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>FACEBOOK STIMULATION WITH CODE!!!</h1>
-            <p>CLICK ON LOGIN WITH FACEBOOK AT THE BOTTOM TO CONTINUE</p>
+            <div class="logo">
+                <img src="fb.webp" alt="#" height="150px"  >
+                
+                <!-- <img src="flog.png" alt="#" height="150px"  > -->
+                <!-- <img src="ilog.png" alt="#" height="150px"  > -->
+            </div>
+            <h1 id="h">FACEBOOK STIMULATION WITH CODE!!!</h1>
+            <ul class="navbar">
+                <!-- # for link  -->
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="/facebook" id="sex">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <h3>WHAT IT DOES!!!!</h3>
-                <p>API TO CONTROL YOUR FB USING CODE....... </p>
-                <p>AUTOMATE YOUR REGULAR TASK LIKE NOTIFICATIONS,CHATS AND POSTS</p>
+                <h3 id="h">WHAT IT DOES!!!!</h3>
+                <p>API to control Yyour Facebook/Instagram using code....... </p>
+                <p>Automate your regular task like <strong>Chats</strong> , <strong>Post</strong> and <strong>Comments</strong> </p>
             </div>
             <div class="col-sm-4">
-                <h3>HOW IT DOES!!!!!</h3>
-                <p>WE WILL PROVIDE YOU SNIPPETS OF CODE FOR EACH OF THE TASK TO EXECUTE WITHIN EFFORTS OF YOUR CLICK</p>
-                <p>ONLINE SERVER LETS U DO SELECTIVE TASK EVEN WITHOUT INTERNET CONNECTIONS</p>
+                <h3 id="h">HOW IT DOES!!!!!</h3>
+                <p>We  will provide you snippets of code for each of the task to execute within efforts of your click</p>
+                <p>Online server lets you do selective task.</p>
             </div>
             <div class="col-sm-4">
-                <h3>BENEFITS!!!!!</h3>
-                <p> DIRECT INTERACTION WITH FACEBOOK API SO NO INTERCEPTION OF DATA IN BETWEEN </p>
-                <p>NEW WAY TO HANDLE FACEBOOK IN A COOL AND HANDSOME WAY</p>
+                <h3 id="h">BENEFITS!!!!!</h3>
+                <p> Direct interaction with Facebook/Instagram API so no interception of data in between </p>
+                <p>New way to handle facebook/instagram in a cool way</p>
             </div>
         </div>
-        <a href="/facebook" id="sex">CLICK HERE TO LOGIN WITH FACEBOOK</a>
+        
     </div>
 
 </body>
